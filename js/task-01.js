@@ -1,17 +1,12 @@
-const listEl = document.querySelector("#categories")
-console.log(listEl)
-
-const listItemEl = listEl.querySelectorAll(".item")
+const listItemEl = document.querySelectorAll(".item")
 console.log("Number of categories: ", listItemEl.length)
 
-const subArrEl = listEl.querySelectorAll("h2");
-const subEl = subArrEl.forEach(el => {
-    console.log(`Category: ${el.textContent}`)
-    
+const firstEl=document.querySelectorAll(".item")
+const childEl = firstEl.forEach(el => {
+    console.log(
+    `Category: ${el.firstElementChild.textContent} 
+    Elements:${el.querySelectorAll("li").length}
+    `)
+
 })
 
-console.log(subEl)
-
-
-const itemsInInemEl = listItemEl.querySelectorAll("li")
-console.log(itemsInInemEl)
