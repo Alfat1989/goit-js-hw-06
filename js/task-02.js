@@ -17,12 +17,7 @@ const itemInnerEl = ingredients.map(el => {
   itemEl.classList.add("item")
   itemEl.textContent = el
   itemsEl.push(itemEl)
-
-//  console.log(itemEl)
-  
 })
-
-console.log(itemInnerEl)
 
 listEl.append(...itemsEl)
 
