@@ -14,7 +14,8 @@ function onFormSubmit(event) {
     //     formObj.email = inputEl.email.value,
     //     formObj.password=inputEl.password.value
      if (inputEl.email.value==="" || inputEl.password.value==="") {
-        window.alert("Все поля должны быть заполнены")
+        return window.alert("Все поля должны быть заполнены")
+         
     } else {
         formObj.email=inputEl.email.value
         formObj.password=inputEl.password.value
