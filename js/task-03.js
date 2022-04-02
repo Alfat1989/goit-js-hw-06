@@ -20,7 +20,7 @@ console.log(galleryEl)
 
 const itemsEl = images.map(({ alt, url }) =>
   `<li><img src="${url}" alt="${alt}" width=640"></li>` 
-).join("")
+).join('')
 
 galleryEl.insertAdjacentHTML("afterbegin", itemsEl)
 galleryEl.style.display = "flex"

@@ -9,7 +9,7 @@ const ingredients = [
 
 
 const listEl = document.querySelector("#ingredients")
-console.log(listEl)
+// console.log(listEl)
 
 
 const itemInnerEl = ingredients.map(el => {

@@ -1,6 +1,5 @@
 const form = document.querySelector("form");
-console.log(form)
-
+// console.log(form)
 form.addEventListener("submit", onFormSubmit)
 
 function onFormSubmit(event) {
@@ -16,14 +15,12 @@ function onFormSubmit(event) {
     } else {
         formObj.email=inputEl.email.value
         formObj.password=inputEl.password.value
-         
-        
-    }
+          
+     }
     
     console.log(formObj)
-    
-    
-    
+    event.currentTarget.reset()
+       
 }  
 
 
